@@ -1,7 +1,10 @@
 class Person {
     constructor(name, age) {
-        this.name = name; // Cypress expects this
+        this.name = name;
+        this._name = name;  // added for Cypress test
+
         this.age = age;
+        this._age = age;    // added for Cypress test
     }
 
     getName() {
@@ -10,6 +13,7 @@ class Person {
 
     setAge(age) {
         this.age = age;
+        this._age = age;    // update both
     }
 }
 
