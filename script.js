@@ -1,37 +1,36 @@
-//complete this code
 class Person {
-	constructor(name, age){
-		this._name = name;
-		this._age = age;
-	}
+    constructor(name, age) {
+        this.name = name; // Cypress expects this
+        this.age = age;
+    }
 
-	getName(){
-		return this._name;
-	}
+    getName() {
+        return this.name;
+    }
 
-	setAge(age){
-		this._age = age;
-	}
+    setAge(age) {
+        this.age = age;
+    }
 }
 
-
 class Student extends Person {
-	constructor(name, age){
-		super(name, age);
-	}
-	
-	study(){
-		console.log(`${this.name} is studying`);
-	}
+    constructor(name, age) {
+        super(name, age);
+    }
+
+    study() {
+        console.log(`${this.name} is studying`);
+    }
 }
 
 class Teacher extends Person {
-	constructor(name, age){
-		super(name, age);
-	}
-	teach(){
-		console.log(`${this.name} is teaching`)
-	}
+    constructor(name, age) {
+        super(name, age);
+    }
+
+    teach() {
+        console.log(`${this.name} is teaching`);
+    }
 }
 
 // Do not change the code below this line
